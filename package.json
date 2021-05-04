@@ -4,7 +4,7 @@
   "description": "Scan network IP fast and easy.",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +15,13 @@
     "ip",
     "scanner"
   ],
-  "author": "Samrat Saha",
+  "author": "Samrat-Saha-Sammy",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner/issues"
   },
-  "homepage": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner#readme"
+  "homepage": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner#readme",
+  "dependencies": {
+    "electron": "^12.0.6"
+  }
 }
