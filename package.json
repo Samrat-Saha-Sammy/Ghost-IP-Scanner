@@ -1,0 +1,24 @@
+{
+  "name": "ghost-ip-scanner",
+  "version": "1.0.0",
+  "description": "Scan network IP fast and easy.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner.git"
+  },
+  "keywords": [
+    "ip",
+    "scanner"
+  ],
+  "author": "Samrat Saha",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner/issues"
+  },
+  "homepage": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner#readme"
+}
