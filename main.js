@@ -1,18 +1,25 @@
 const { app, BrowserWindow } = require("electron");
+const path = require("path");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 600,
-    height: 350,
-    backgroundColor: "#ccc",
+    width: 768,
+    height: 579,
+    frame: false,
+    backgroundColor: "#FFF",
     webPreferences: {
-      nodeIntegration: false,
+      nodeIntegration: true,
       worldSafeExecuteJavaScript: true,
-      contextIsolation: true,
+      contextIsolation: false,
+      enableRemoteModule: true,
     },
   });
 
   win.loadFile("index.html");
 }
+
+require("electron-reload")(__dirname, {
+  electron: path.join(__dirname, "node_modules", ".bin", "electron"),
+});
 
 app.whenReady().then(createWindow);

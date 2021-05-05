@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "watch": "webpack --config webpack.common.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +23,10 @@
   },
   "homepage": "https://github.com/Samrat-Saha-Sammy/Ghost-IP-Scanner#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
     "electron": "^12.0.6",
+    "network-list": "^1.1.5",
+    "ping": "^0.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -30,7 +34,10 @@
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "electron-reload": "^1.5.0",
+    "file-loader": "^6.2.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
